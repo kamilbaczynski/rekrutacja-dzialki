@@ -4,6 +4,7 @@
 
 html {
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 *, *:before, *:after {
@@ -11,6 +12,29 @@ html {
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  margin: 0;
+  padding: 0;
 }
+
+.first {
+  height: 100vh;
+  max-width: 100vw;
+  background: url(../assets/img/gardener.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.first__header {
+  position: absolute;
+  z-index: 1;
+}
+
+.side-navigation {
+  display: none;
+}
+
+.second {
+  height: 100vh;
+}
+
