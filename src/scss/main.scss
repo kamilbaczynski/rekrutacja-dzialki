@@ -15,14 +15,70 @@ html {
 }
 
 body {
-
+  font-family: Poppins;
   margin: 0;
   padding: 0;
 }
 
+.topper-contact {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  position: absolute;
+  height: 80px;
+  width: 100vw;
+  border: 1px solid #707070;
+  background-color: #3a3a3a;
+  margin: 0;
+  padding: 0 100px 0 100px;
+}
+
+.topper-contact__item {
+  display: inline-block;
+  color: #c2c2c2;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  padding-top: 16px;
+}
+
+.topper-contact__item-telephone {
+  position: relative;
+  padding-right: 35px;
+  &::before {
+    position: absolute;
+    top: 16px;
+    left: -14px;
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url("../assets/img/icon-call-12px.svg");
+  }
+}
+
+.topper-contact__item-email {
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 16px;
+    left: -16px;
+    content: "";
+    display: block;
+    width: 15px;
+    height: 12px;
+    background: url("../assets/img/icon-mail-12px.svg");
+  }
+}
+
+// .topper-contact__item-email {
+
+// }
+
 .side-nav{
   position: fixed;
-  bottom: 50vh;
+  bottom: 40vh;
   display: flex;
   flex-flow: column nowrap;
   &__button-tel {
