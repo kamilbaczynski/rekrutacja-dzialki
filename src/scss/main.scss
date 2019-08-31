@@ -20,3 +20,54 @@ body {
   padding: 0;
 }
 
+.side-nav{
+  position: fixed;
+  bottom: 50vh;
+  display: flex;
+  flex-flow: column nowrap;
+  &__button-tel {
+    display: block;
+    height: 55px;
+    width: 71px;
+    background-image: url(../assets/img/icon-tel.svg);
+    background-color: #ffffff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__button-mail {
+    display: block;
+    height: 55px;
+    width: 71px;
+    background-image: url(../assets/img/icon-mail.svg);
+    background-color: #ffffff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__button-info {
+    display: block;
+    height: 55px;
+    width: 71px;
+    background-image: url(../assets/img/icon-info.svg);
+    background-color: #ffffff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
