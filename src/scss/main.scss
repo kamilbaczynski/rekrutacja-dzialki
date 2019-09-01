@@ -1,6 +1,8 @@
 @import "_normalize";
 @import "_variables";
 
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap&subset=latin-ext');
+
 @import "modules/first.scss";
 @import "modules/second.scss";
 
@@ -21,48 +23,59 @@ body {
 }
 
 .topper-contact {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  position: absolute;
+  display: block;
+  margin: 0;
+  padding: 0;
   height: 80px;
-  width: 100vw;
   border: 1px solid #707070;
   background-color: #3a3a3a;
-  margin: 0;
-  padding: 0 100px 0 100px;
-}
-
-.topper-contact__item {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
   color: #c2c2c2;
   font-size: 13px;
   font-weight: 400;
-  padding: 0;
+}
+
+.topper-contact__left {
   margin: 0;
   padding-top: 16px;
+  display: flex;
+  flex-flow: row nowrap;
+  flex-shrink: 0;
+}
+
+.topper-contact__right {
+  margin: 0;
+  padding-top: 16px;
+  flex-shrink: 0;
+}
+
+.topper-contact__item {
+  margin: 0;
+  padding: 0;
 }
 
 .topper-contact__item-telephone {
-  position: relative;
-  padding-right: 35px;
-  &::before {
-    position: absolute;
-    top: 16px;
-    left: -14px;
-    content: "";
-    display: block;
-    width: 12px;
-    height: 12px;
-    background: url("../assets/img/icon-call-12px.svg");
+    position: relative;
+    padding-right: 35px;
+    &::before {
+      position: absolute;
+      top: 0px;
+      left: -14px;
+      content: "";
+      display: block;
+      width: 12px;
+      height: 12px;
+      background: url('../assets/img/icon-call-12px.svg');
+    }
   }
-}
 
 .topper-contact__item-email {
   position: relative;
   &::before {
     position: absolute;
-    top: 16px;
+    top: 0px;
     left: -16px;
     content: "";
     display: block;
@@ -72,9 +85,8 @@ body {
   }
 }
 
-// .topper-contact__item-email {
 
-// }
+
 
 .side-nav{
   position: fixed;
