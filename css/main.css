@@ -958,4 +958,10 @@ main {
     .footer__made-by--orange {
       color: #ec9b20; }
 
+@media (max-width: 767px) {
+  .bottom-nav {
+    display: none; }
+  .footer {
+    display: none; } }
+
 /*# sourceMappingURL=main.css.map */
