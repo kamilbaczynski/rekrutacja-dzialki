@@ -7,12 +7,18 @@
     color: #3a3a3a;
     font-size: 40px;
     font-weight: 400;
+    @media (max-width: 700px) {
+      margin: 50px 0 0 0;
+    }
     &--description {
       margin: 35px 0 0 0;
       text-align: center;
       color: #3a3a3a;
       font-size: 16px;
       font-weight: 400;
+      @media (max-width: 700px) {
+        margin: 35px 10px 0 10px;
+      }
     }
 	}
 }
@@ -22,10 +28,20 @@
   margin: 50px 75px 0 75px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-	grid-column-gap: 42px;
-
+  grid-column-gap: 42px;
   grid-template-areas:
   "grid-container__box-first grid-container__box-second grid-container__box-third";
+
+  @media (max-width: 700px) {
+    margin: 40px 30px 0 35px;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 20px;
+    grid-template-areas:
+    "grid-container__box-first"
+    "grid-container__box-second"
+    "grid-container__box-third";
+  }
 
   &__box-first {
     grid-area: grid-container__box-first;
@@ -86,85 +102,3 @@
     line-height: 20px;
   }
 }
-
-
-//FLEXBOX ALTERNATIVE CSS + HTML
-
-
-// .second {
-//   min-height: 100vh;
-//   max-width: 100vw;
-// }
-
-// .second__header {
-//   text-align: center;
-//   margin: 130px 0 0 0;
-//   color: #3a3a3a;
-//   font-size: 40px;
-//   font-weight: 400;
-// }
-
-// .second__header--description {
-//   margin: 35px 0 0 0;
-//   text-align: center;
-//   color: #3a3a3a;
-//   font-size: 16px;
-//   font-weight: 400;
-// }
-
-// .second__articles {
-// 	padding: 50px 20px 0 20px;
-// 	display: flex;
-// 	justify-content: space-between;
-// }
-
-// .second__articles--box {
-// 	max-width: 500px;
-// }
-
-// .box__image {
-// 	display: block;
-// 	width: 100%;
-// }
-
-
-// <section class="second">
-
-//       <h2 class="second__header">NAJNOWSZE ARTYKUŁY</h2>
-//       <p class="second__header--description">Lorem ipsum solor damon que velocis numer ono ratun damon que velocis
-//         numer
-//       </p>
-
-//       <div class="second__articles">
-//         <article class="second__articles--box">
-//           <img class="box__image" src="assets/img/image-box-1.png" alt="alejka pośród drzew">
-//           <h3 class="box__header">LAND LIGHTS LET BE DIVIDED</h3>
-//           <p class="box__date">22.09.2019</p>
-//           <p class="box__description">Ut enim ad minima veniam, quis nostrum exercitationem ullam et suscipit
-//             laboriosam,
-//             nisi ut aliquid ex ea commodi consequatur. Et mollis, est non […]</p>
-//           <a class="box__link" href="#">CZYTAJ WIĘCEJ</a>
-//         </article>
-
-//         <article class="second__articles--box">
-//           <img class="box__image" src="assets/img/image-box-2.png" alt="czerwone kwiaty">
-//           <h3 class="box__header">LAND LIGHTS LET BE DIVIDED</h3>
-//           <p class="box__date">22.09.2019</p>
-//           <p class="box__description">Ut enim ad minima veniam, quis nostrum exercitationem ullam et suscipit
-//             laboriosam,
-//             nisi ut aliquid ex ea commodi consequatur. Et mollis, est non […]</p>
-//           <a class="box__link" href="#">CZYTAJ WIĘCEJ</a>
-//         </article>
-
-//         <article class="second__articles--box">
-//           <img class="box__image" src="assets/img/image-box-3.png" alt="drzewa jesienną porą">
-//           <h3 class="box__header">LAND LIGHTS LET BE DIVIDED</h3>
-//           <p class="box__date">22.09.2019</p>
-//           <p class="box__description">Ut enim ad minima veniam, quis nostrum exercitationem ullam et suscipit
-//             laboriosam,
-//             nisi ut aliquid ex ea commodi consequatur. Et mollis, est non […]</p>
-//           <a class="box__link" href="#">CZYTAJ WIĘCEJ</a>
-//         </article>
-//       </div>
-
-//     </section>
