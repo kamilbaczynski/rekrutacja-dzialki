@@ -5,20 +5,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Site title</title>
-  <meta name="description" content="Description" />
-  <!-- Title -->
-  <meta property="og:title" content="" />
-  <!-- OPTIONAL description. 2-4 sentences. -->
-  <meta property="og:description" content="" />
-  <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-  <meta property="og:url" content="" />
-  <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-  <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
-  <link rel="manifest" href="manifest.json" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
-  <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
+  <title>Stowarzyszenie Ogródkowe Nasza Krępa</title>
+  <meta name="description" content="Strona Stowarzyszenia Ogrodowego" />
+  <link rel="icon" type="image/png" href="../assets/img/logo-a.png" />
+  
+  <meta property="og:title" content="Stowarzyszenie Ogródkowe" />
+  <meta property="og:description" content="Strona Stowrzysznia Ogródkowego zrzeszająca setki ogródkowiczów z okolicy" />
+  <meta property="og:url" content="https://kamilbaczynski.github.io/rekrutacja-dzialki/" />
+  <meta property="og:image" content="https://kamilbaczynski.github.io/rekrutacja-dzialki/assets/img/cover.png" />
+
   <link rel="stylesheet" href="css/main.css" />
 </head>
 
@@ -37,12 +32,11 @@
       </div>
     </div>
 
-    <nav class="top-nav">
-      <ul class="top-nav__list">
+    <nav class="top-nav top-nav--js">
+      <button class="top-nav__switcher top-nav__switcher--js" aria-label="Otwarcie meny">☰</button>
+      <img class="top-nav__image" src="assets/img/logo.svg" alt="Logo Stowarzyszenia Ogrodowego Nasza Krępa">
 
-        <li class="top-nav__item">
-          <img class="top-nav__image" src="assets/img/logo.svg" alt="Logo Stowarzyszenia Ogrodowego Nasza Krępa">
-        </li>
+      <ul class="top-nav__list top-nav__list--js">
 
         <li class="top-nav__item">
           <a class="top-nav__link" href="#">STRONA GŁÓWNA</a>
@@ -66,7 +60,7 @@
     </nav>
 
     <nav class="side-nav">
-      <button class="side-nav__button-tel"></button>
+      <button class="side-nav__button-tel side-nav__button-tel--js"><a class="side-nav__button-tel--link">666 66 666</a></button>
       <button class="side-nav__button-mail"></button>
       <button class="side-nav__button-info"></button>
     </nav>
