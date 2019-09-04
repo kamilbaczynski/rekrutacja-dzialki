@@ -1,22 +1,30 @@
 "use strict";
 
-// service worker registration - remove if you're not going to use it
+const switcherNav = document.querySelector('.top-nav__switcher--js');
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
-}
+switcherNav.addEventListener('click', (e) => {
+  const navigationList = document.querySelector('.top-nav__list--js');
+  navigationList.classList.toggle('top-nav__list--visible');
 
-// place your code below
+  const navigationBar = document.querySelector('.top-nav--js');
+  navigationBar.classList.toggle('top-nav--visible');
 
+  if (navigationList.classList.contains('top-nav__list--visible')) {
+      switcher.innerHTML = 'X';
+  }
+  else {
+      switcher.innerHTML = '☰';
+  }
+});
 
-console.log(`Hello world!`);
+const switcherSide = document.querySelector('.side-nav__button-tel--js');
+
+switcherSide.addEventListener('click', (e) => {
+  const navigationTel = document.querySelector('.side-nav__button-tel--link');
+  navigationTel.classList.toggle('side-nav__button-tel--link-visible');
+
+  const navigationBut = document.querySelector('.side-nav__button-tel--js')
+  navigationBut.classList.toggle('side-nav__button-tel--visible')
+});
 
 

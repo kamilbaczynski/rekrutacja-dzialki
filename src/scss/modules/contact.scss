@@ -6,41 +6,7 @@
   background-color: #a3c145;
   display: flex;
   justify-content: space-between;
-  &__text {
-    margin: 70px 0 0 170px;
-    &--header {    
-      color: #ffffff;
-      font-size: 25px;
-      font-weight: 400;
-      margin: 0 0 0 0;  
-    }
-    &--description {
-      color: #ffffff;
-      font-size: 20px;
-      font-weight: 400;
-      margin: 0;
-      padding-top: 16px;    
-    }
-  }
-  &__button{
-    background-color: #3a3a3a;
-    width: 398px;
-    height: 86px;
-    margin: 70px 200px 0 0;  
-    &--link {
-      display: block;
-      padding: 27px 90px 31px 90px;
-      color: #ffffff;
-      font-size: 25px;
-      font-weight: 700;
-      text-decoration: none;
-    }
-  }
-}
-
-
-@media (max-width: 700px) {
-  .contact-section {
+  @media (max-width: 700px) {
     width: 100vw;
     font-family: Poppins;
     display: block;
@@ -51,31 +17,60 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    &__text {
+  }
+  &__text {
+    margin: 70px 0 0 170px;
+    @media (max-width: 700px) {
       text-align: center;
       margin: 20px 0 0 0;
       padding: 0;
-      
-      &--header {
+    }
+    &--header {    
+      color: #ffffff;
+      font-size: 25px;
+      font-weight: 400;
+      margin: 0 0 0 0; 
+      @media (max-width: 700px) {
         color: #ffffff;
         font-size: 25px;
         font-weight: 400;
       }
-      &--description {
+    }
+    &--description {
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 400;
+      margin: 0;
+      padding-top: 16px;
+      @media (max-width: 700px) {
         color: #ffffff;
         font-size: 20px;
         font-weight: 400;
         padding: 0;
         margin: 20px 0 0 0;
-      }
+      }    
     }
-    &__button{
+  }
+  &__button{
+    background-color: #3a3a3a;
+    width: 398px;
+    height: 86px;
+    margin: 70px 200px 0 0;  
+    @media (max-width: 700px) {
       display: block;
       width: 350px;
       background-color: #3a3a3a;
       padding: 0;
       margin: 20px 0 20px 0;
-      &--link {
+    }
+    &--link {
+      display: block;
+      padding: 27px 90px 31px 90px;
+      color: #ffffff;
+      font-size: 25px;
+      font-weight: 700;
+      text-decoration: none;
+      @media (max-width: 700px) {
         display: block;
         color: #ffffff;
         font-size: 25px;
@@ -86,11 +81,6 @@
     }
   }
 }
-
-@media (max-width: 700px) {
-
-}
-
 
 .fourth {
   min-height: 600px;
@@ -183,5 +173,3 @@
 .weatherwidget-io {
   z-index: -1;
 }
-
-
