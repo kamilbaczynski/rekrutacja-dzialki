@@ -1,86 +1,54 @@
-.contact-section {
-  margin: 50px 0 0 0;
+.contact-bar {
   font-family: Poppins;
   display: block;
-  min-height: 228px;
   background-color: #a3c145;
-  display: flex;
-  justify-content: space-between;
-  @media (max-width: 700px) {
-    width: 100vw;
-    font-family: Poppins;
-    display: block;
-    background-color: #a3c145;
-    margin: 30px 0 0 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  padding: 40px 80px;
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  
   &__text {
-    margin: 70px 0 0 170px;
-    @media (max-width: 700px) {
-      text-align: center;
-      margin: 20px 0 0 0;
-      padding: 0;
-    }
+    margin: 0;
+    
     &--header {    
       color: #ffffff;
       font-size: 25px;
       font-weight: 400;
-      margin: 0 0 0 0; 
-      @media (max-width: 700px) {
-        color: #ffffff;
-        font-size: 25px;
-        font-weight: 400;
-      }
+      margin: 0 
     }
+
     &--description {
       color: #ffffff;
       font-size: 20px;
       font-weight: 400;
       margin: 0;
-      padding-top: 16px;
-      @media (max-width: 700px) {
-        color: #ffffff;
-        font-size: 20px;
-        font-weight: 400;
-        padding: 0;
-        margin: 20px 0 0 0;
-      }    
+      padding: 16px 0 0 0;
     }
   }
-  &__button{
-    background-color: #3a3a3a;
-    width: 398px;
-    height: 86px;
-    margin: 70px 200px 0 0;  
-    @media (max-width: 700px) {
-      display: block;
-      width: 350px;
-      background-color: #3a3a3a;
-      padding: 0;
-      margin: 20px 0 20px 0;
-    }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
     &--link {
-      display: block;
-      padding: 27px 90px 31px 90px;
+      display:  inline-block;
+      background-color: #3a3a3a;
       color: #ffffff;
-      font-size: 25px;
-      font-weight: 700;
+      font-size: 20px;
       text-decoration: none;
-      @media (max-width: 700px) {
-        display: block;
-        color: #ffffff;
-        font-size: 25px;
-        font-weight: 700;
-        padding: 27px 60px 31px 65px;
-        text-decoration: none;
-      }
+      padding: 20px 25px 20px 25px;
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+      border: 1px solid #ffffff;
     }
   }
 }
+
+
+
+
+
 
 .fourth {
   min-height: 600px;
