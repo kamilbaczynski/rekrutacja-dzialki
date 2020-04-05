@@ -28,6 +28,8 @@ body {
   background-attachment: fixed;
 }
 
+
+//Top navigation styles
 .top-nav {
   position: fixed;
   display: block;
@@ -36,6 +38,7 @@ body {
   width: 100%;
   background-color: #ffffff;
   padding: 0 60px 0 200px;
+  z-index: 1;
 
   &__menu {
     display: none;
