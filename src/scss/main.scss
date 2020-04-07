@@ -20,12 +20,24 @@ html {
 
 body {
   font-family: Poppins;
-  margin: 0;
-  padding: 0;
+  position: relative;
+}
+
+
+//Hero parallax styles
+.parallax {
   background-image: url(../assets/img/gardener.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+
+  display: block;
+  width: 100vw;
+  height: 120vh;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 
