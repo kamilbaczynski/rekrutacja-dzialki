@@ -41,6 +41,12 @@
       font-weight: 600;
       text-transform: uppercase;
       border: 1px solid black;
+
+      transition: background-color 0.2s linear;
+      
+      &:hover {
+        background-color: #505050;
+      }
     }
   }
 }

@@ -92,6 +92,12 @@ body {
     &--item {
       display: inline-block;
 
+      transition: transform 0.2s linear;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+
       .link {
         text-decoration: none;
         color: #3a3a3a;
@@ -144,6 +150,10 @@ body {
 
     &__item {
       font-size: 16px;
+      transition: transform 0.2s linear;
+      &:hover {
+        transform: scale(1.05);
+      }
 
       a {
         text-decoration: none;

@@ -32,6 +32,11 @@
 
 .card {
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.16);
+  transition: transform 0.2s linear;
+
+  &:hover {
+    transform: scale(1.025);
+  }
   
   &__image {
     display: block;
@@ -78,5 +83,12 @@
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
+
+    transition: color 0.2s linear, background-color 0.2s linear;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #90b861;
+    }
   }
 }

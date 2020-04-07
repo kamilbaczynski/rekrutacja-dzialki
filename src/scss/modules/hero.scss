@@ -20,18 +20,26 @@
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
-    
+
+    transition: color 0.2s linear, background-color 0.2s linear;
 
     &--info {
       color: #fff;
       background-color: #A3C145;
+
+      &:hover {
+        color: #A3C145;
+        background-color: #fff;
+      }
     }
 
     &--docs {
       color: #A3C145;
       background-color: #fff;
+      &:hover {
+        color: #fff;
+        background-color: #A3C145;
+      }
     }
-
   }
-
 }

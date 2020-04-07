@@ -44,6 +44,13 @@
       font-weight: 700;
       line-height: 20px;
       text-decoration: none;
+
+      transition: background-color 0.2s linear, color 0.2s linear;
+
+      &:hover {
+      background-color: #90b861;
+      color: #ffffff;
+      }
     }
   }
 
