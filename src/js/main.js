@@ -1,32 +1,24 @@
 // "use strict";
 
-// const switcherNav = document.querySelector('.top-nav__switcher--js');
 
-// switcherNav.addEventListener('click', (e) => {
-//   const navigationList = document.querySelector('.top-nav__list--js');
-//   navigationList.classList.toggle('top-nav__list--visible');
+// Hamburger menu / slide from right side effect
+const hamburgerBtn = document.querySelector('.hamburger-js');
 
-//   const navigationBar = document.querySelector('.top-nav--js');
-//   navigationBar.classList.toggle('top-nav--visible');
+hamburgerBtn.addEventListener('click', e => {
+  e.preventDefault;
 
-//   if (navigationList.classList.contains('top-nav__list--visible')) {
-//       switcher.innerHTML = 'X';
-//   }
-//   else {
-//       switcher.innerHTML = '☰';
-//   }
-// });
+  // Hamburger letter change
+  if (hamburgerBtn.innerHTML === '☰') {
+    hamburgerBtn.innerHTML = 'X';
+  } else if (hamburgerBtn.innerHTML === 'X') {
+    hamburgerBtn.innerHTML = '☰';
+  };
 
-// const switcherSide = document.querySelector('.side-nav__button-tel--js');
-
-// switcherSide.addEventListener('click', (e) => {
-//   const navigationTel = document.querySelector('.side-nav__button-tel--link');
-//   navigationTel.classList.toggle('side-nav__button-tel--link-visible');
-
-//   const navigationBut = document.querySelector('.side-nav__button-tel--js')
-//   navigationBut.classList.toggle('side-nav__button-tel--visible')
-// });
-
+  // Adding open menu class
+  const list = document.querySelector('.top-nav__list--js');
+  list.classList.toggle('hamburger-menu-open');
+  
+});
 
 //Hero section parallax effect
 window.addEventListener('scroll', e => {

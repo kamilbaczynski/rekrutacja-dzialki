@@ -1,2 +1,18 @@
 $violet: #000;
 $yellow: #F9C802;
+
+
+// Media queries for desktop first
+// All rules outside of @media queries apply to devices 1201px and above
+
+// Large devices from 993px to 1200px (inclusive)
+// @media (max-width: 1200px)
+$large: 1200px;
+
+// Medium - devices from 769px to 992px (inclusive)
+// @media (max-width: 992px)
+$medium: 992px;
+
+// Small - devices from 0px to 768px (inclusive)
+// @media (max-width: 768px)
+$small: 768px;
