@@ -55,20 +55,71 @@ body {
 
   &__hamburger {
     display: none;
-    cursor: pointer;
 
     @media (max-width: $medium) {
-      display: block;
+
       position: absolute;
-      top: 15px;
-      right: 20px;
-      height: 40px;
-      width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      cursor: pointer;
       border: none;
-      padding: 5px;
-      font-size: 30px;
-      background: none;
+      background-color: transparent;
+  
+      padding: 0;
+      margin: 0;
+      width: 40px;
+      height: 40px;
+      right: 20px;
+      top: 15px;
+
     }
+
+    // Hamburger icon
+    &--icon {
+      display: inline-block;
+      width: 40px;
+      height: 3px;
+      border-radius: 3px;
+      background-color: black;
+      position: relative;
+
+      transition: transform 0.2s linear;
+      
+      &::after,
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 40px;
+        height: 3px;
+        border-radius: 3px;
+        background-color: black;
+        position: absolute;
+        right: 0;
+
+        transition: transform 0.2s linear;
+      }
+
+      &::before {
+        transform: translateY(-16px);
+      }
+      &::after {
+        transform: translateY(16px);
+      }
+    }
+
+    //Styles converting hamburger icon into X icon
+    .icon-x {
+      transform: rotate(45deg)
+    }
+    .icon-x::before {
+      transform: rotate(-90deg);
+    }
+    .icon-x::after {
+      transform: rotate(-90deg);
+    }
+    
   }
 
   &__image {
@@ -81,6 +132,7 @@ body {
     opacity: 1;
   }
 
+  // Menu items list
   &__list {
     display: block;
     list-style-type: none;
@@ -133,11 +185,13 @@ body {
       }
     }
   }
+
+  //Menu slide in from right side styles medium screens
+  .hamburger-menu-open {
+    transform: translateX(-500px);
+  }
 }
 
-.hamburger-menu-open {
-  transform: translateX(-500px);
-}
 
 
 // Bottom navigations styles
