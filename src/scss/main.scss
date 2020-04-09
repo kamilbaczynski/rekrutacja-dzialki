@@ -38,6 +38,11 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+
+  @media (max-width: $small) {
+    background-position: -150px -50px;
+    height: 130vh;
+  }
 }
 
 
@@ -53,11 +58,14 @@ body {
   padding: 0 60px 0 200px;
   z-index: 1;
 
+  @media (max-width: $small) {
+    height: 50px;
+  }
+
   &__hamburger {
     display: none;
 
     @media (max-width: $medium) {
-
       position: absolute;
       display: flex;
       justify-content: center;
@@ -71,9 +79,15 @@ body {
       margin: 0;
       width: 35px;
       height: 35px;
-      right: 20px;
+      right: 30px;
       top: 15px;
+    }
 
+    @media (max-width: $small) {
+      width: 30px;
+      height: 30px;
+      top: 10px;
+      right: 20px;
     }
 
     // Hamburger icon
@@ -86,7 +100,7 @@ body {
       position: relative;
 
       transition: transform 0.2s linear;
-      
+
       &::after,
       &::before {
         content: '';
@@ -97,15 +111,27 @@ body {
         background-color: black;
         position: absolute;
         right: 0;
-
         transition: transform 0.2s linear;
+    
+        @media (max-width: $small) {
+          width: 30px;
+        }
       }
 
       &::before {
         transform: translateY(-14px);
+
+        @media (max-width: $small) {
+          transform: translateY(-10px);
+        }
       }
+      
       &::after {
         transform: translateY(14px);
+
+        @media (max-width: $small) {
+          transform: translateY(10px);
+        }
       }
     }
 
@@ -128,7 +154,20 @@ body {
     width: auto;
     top: 20px;
     left: 50px;
-    opacity: 1;
+
+    @media (max-width: $medium){
+      height: 60px;
+      width: auto;
+      top: 5px;
+      left: 30px
+    }
+
+    @media (max-width: $small) {
+      height: 70px;
+      top: 15px;
+      left: 20px;
+      z-index: 5;
+    }
   }
 
   // Menu items list
@@ -149,17 +188,23 @@ body {
       display: block;
       position: absolute;
       top: 70px;
-      right: -500px;
+      right: -900px;
       background-color: #ffffff;
 
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: flex-end;
       justify-content: flex-start;
 
-      height: calc(100vh - 70px);
+      height: 100vh;
       width: 300px;
       padding: 40px
+    }
+
+    @media (max-width: $small) {
+      top: 50px;
+      width: 100%;
+      padding: 50px 0 0 0;
     }
 
     &--item {
@@ -187,10 +232,9 @@ body {
 
   //Menu slide in from right side styles medium screens
   .hamburger-menu-open {
-    transform: translateX(-500px);
+    transform: translateX(-900px);
   }
 }
-
 
 
 // Bottom navigations styles
@@ -208,6 +252,11 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  @media (max-width: $small) {
+    padding: 40px;
+    grid-template-columns: 1fr;
+  }
+  
   &__image {
     display: block;
     width: 75%;
@@ -224,23 +273,30 @@ body {
       z-index: 0;
       transform: translate(-50%, -50%);
     }
+      
+    @media (max-width: $small) {
+      top: 30%;
+    }
   }
 
   &__card {
     margin: 0;
     padding: 20px 0 0 20px;
-    z-index: 1;
 
+    @media (max-width: $small) {
+      padding: 0 0 25px 20px;
+    }
+    
     &--title {
       margin: 0;
       padding: 0 0 30px 0;
       font-size: 16px;
       font-weight: bold;
       text-transform: uppercase;
-    }
-
-    &--list {
       
+      @media (max-width: $small) {
+        padding: 0 0 5px 0;
+      }
     }
   }
 
@@ -273,12 +329,21 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: white;
- 
+
+  @media (max-width: $small) {
+    display: block;
+    padding: 10px;
+  }
+  
   &__paragraph {
     font-size: 15px;
     font-weight: 400;
     line-height: 15px;
     margin: auto 0;
     padding: 0;
+    
+    @media (max-width: $small) {
+      margin-bottom: 5px;
+    }
   }
 }

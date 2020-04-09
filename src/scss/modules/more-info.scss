@@ -11,6 +11,10 @@
   @media (max-width: $medium) {
     display: block;
   }
+
+  @media (max-width: $small) {
+    padding: 40px;
+  }
   
   &__content-wrapper {
     
@@ -21,11 +25,14 @@
       color: #3a3a3a;
       font-size: 30px;
       font-weight: bold;
-      line-height: 50px;
 
       @media (max-width: $medium) {
         text-align: center;
         text-transform: uppercase;
+      }
+      
+      @media (max-width: $small) {
+        font-size: 30px;
       }
     }
 

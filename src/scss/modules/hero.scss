@@ -1,9 +1,15 @@
 
 .hero {
-	height: 100vh;
+  height: 100vh;
+
   background-color: transparent;
   padding: 0 80px 0 80px;
   text-align: right;
+
+  @media (max-width: $small) {
+    padding: 0 40px 0 40px;
+    height: 100vh;
+  }
 
   &__header {
     margin: 0;
@@ -11,6 +17,15 @@
     font-size: 60px;
     color: #fff;
     font-weight: 700;
+
+    @media (max-width: $medium) {
+      padding: 150px 0 40px 0;
+    }
+
+    @media (max-width: $small) {
+      padding: 120px 0 40px 0;
+      font-size: 35px;
+    }
   }
 
   &__link {
@@ -23,6 +38,10 @@
     text-transform: uppercase;
 
     transition: color 0.2s linear, background-color 0.2s linear;
+
+    @media (max-width: $small) {
+      font-size: 16px;
+    }
 
     &--info {
       color: #fff;
