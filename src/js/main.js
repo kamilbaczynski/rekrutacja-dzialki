@@ -27,3 +27,15 @@ window.addEventListener('scroll', e => {
   parallax.style.transform = `translateY(-${posY}px)`;
 
 });
+
+
+//Sticky side buttons
+const stickyBtns = document.querySelector('.sticky-buttons');
+
+stickyBtns.addEventListener('click', e => {
+
+  if (e.target.tagName === 'BUTTON') {
+    e.target.firstElementChild.classList.toggle('slide-in');
+  }
+  
+});
