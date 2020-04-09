@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Stowarzyszenie Ogródkowe Nasza Krępa</title>
   <meta name="description" content="Strona Stowarzyszenia Ogrodowego" />
-  <link rel="icon" type="image/png" href="assets/img/logo-a.png" />
+  <link rel="icon" type="image/png" href="../assets/img/logo-a.png" />
   
   <meta property="og:title" content="Stowarzyszenie Ogródkowe" />
   <meta property="og:description" content="Strona Stowrzysznia Ogródkowego zrzeszająca setki ogródkowiczów z okolicy" />
@@ -19,132 +19,176 @@
 
 <body>
   <main>
-    <div class="topper-contact">
-      <div class="topper-contact__left">
-        <p class="topper-contact__item topper-contact__item-telephone">22 727 64 94</p>
-        <p class="topper-contact__item topper-contact__item-email">kreparosa@gmail.com</p>
-      </div>
 
-      <div class="topper-contact__right">
-        <p class="topper-contact__item topper-contact__item-name">Stowarzyszenie Ogrodowe "Nasza Krępa" | Krępa, ul.
-          Długa 17 | 05-530 Góra Kalwaria
-        </p>
-      </div>
-    </div>
+    <section class="parallax"></section>
 
-    <nav class="top-nav top-nav--js">
-      <button class="top-nav__switcher top-nav__switcher--js" aria-label="Otwarcie meny">☰</button>
+    <nav class="top-nav">
+
+      <button class="top-nav__hamburger hamburger-js" aria-label="Otwarcie meny">
+        <span class="top-nav__hamburger--icon hamburger-icon-js"></span>
+      </button>
+
       <img class="top-nav__image" src="assets/img/logo.svg" alt="Logo Stowarzyszenia Ogrodowego Nasza Krępa">
 
       <ul class="top-nav__list top-nav__list--js">
 
-        <li class="top-nav__item">
-          <a class="top-nav__link" href="#">STRONA GŁÓWNA</a>
+        <li class="top-nav__list--item">
+          <a class="link" href="#">STRONA GŁÓWNA</a>
         </li>
-        <li class="top-nav__item">
-          <a class="top-nav__link" href="#">O STOWARZYSZENIU</a>
+
+        <li class="top-nav__list--item">
+          <a class="link" href="#">O NAS</a>
         </li>
-        <li class="top-nav__item">
-          <a class="top-nav__link" href="#">WAŻNE DOKUMENTY</a>
+
+        <li class="top-nav__list--item">
+          <a class="link" href="#">DOKUMENTY</a>
         </li>
-        <li class="top-nav__item">
-          <a class="top-nav__link" href="#">GALERIA</a>
+
+        <li class="top-nav__list--item">
+          <a class="link" href="#">GALERIA</a>
         </li>
-        <li class="top-nav__item">
-          <a class="top-nav__link" href="#">KONTAKT</a>
+
+        <li class="top-nav__list--item">
+          <a class="link" href="#">KONTAKT</a>
         </li>
-        <li class="top-nav__item">
-          <a class="top-nav__link" href="#">OPŁATY</a>
+
+        <li class="top-nav__list--item">
+          <a class="link" href="#">OPŁATY</a>
         </li>
+
       </ul>
     </nav>
 
-    <nav class="side-nav">
+  
+    <!-- <div class="">
+      <img src="../assets/img/icon-mail.svg" alt="">
+      <span>kreparosa@kreparosa.pl</span>
+    </div>
+
+    <div class="">
+      <img src="../assets/img/icon-info.svg" alt="">
+      <span>INFO</span>
+    </div> -->
+
+    <!-- <nav class="side-nav">
       <button class="side-nav__button-tel side-nav__button-tel--js"><a class="side-nav__button-tel--link">666 66 666</a></button>
       <button class="side-nav__button-mail"></button>
       <button class="side-nav__button-info"></button>
-    </nav>
+    </nav> -->
 
-    <section class="first">
-      <h1 class="first__header">
-        Stowarzyszenie Ogrodowe</br>Nasza Krępa
+
+    <section class="hero">
+
+      <h1 class="hero__header">
+        Stowarzyszenie Ogrodowe </br>Nasza Krępa
       </h1>
 
-      <div class="first__link">
-        <a class="first__link--first" href="#">O STOWARZYSZENIU</a>
-        <a class="first__link--second" href="#">WAŻNE DOKUMENTY</a>
-      </div>
+      <a class="hero__link hero__link--info" href="#">O stowarzyszeniu</a>
+      <a class="hero__link hero__link--docs" href="#">Ważne dokumenty</a>
+    
     </section>
 
-    <section class="second">
 
-      <h2 class="second__header">NAJNOWSZE ARTYKUŁY</h2>
-      <p class="second__header--description">Lorem ipsum solor damon que velocis numer ono ratun damon que velocis
+
+    <section class="news">
+
+      <h2 class="news__header">NAJNOWSZE ARTYKUŁY</h2>
+      <p class="news__description">Lorem ipsum solor damon que velocis numer ono ratun damon que velocis
         numer
       </p>
 
-      <div class="grid-container">
-        <div class="grid-container__box-first box">
-          <img class="box__image" src="assets/img/image-box-1.png" alt="alejka pośród drzew">
-          <h3 class="box__header">LAND LIGHTS LET BE DIVIDED</h3>
-          <p class="box__date">22.09.2019</p>
-          <p class="box__description">Ut enim ad minima veniam, quis nostrum exercitationem ullam et suscipit
+      <div class="news__cards">
+
+        <div class="card">
+          <img class="card__image" src="assets/img/image-box-1.png" alt="alejka pośród drzew">
+          <h3 class="card__header">LAND LIGHTS LET BE DIVIDED</h3>
+          <p class="card__date">22.09.2019</p>
+          <p class="card__content">Ut enim ad minima veniam, quis nostrum exercitationem ullam et suscipit
             laboriosam,
-            nisi ut aliquid ex ea commodi consequatur. Et mollis, est non […]</p>
-          <a class="box__link" href="#">CZYTAJ WIĘCEJ</a>
+            nisi ut aliquid ex ea commodi consequatur. Et mollis, est non […]
+          </p>
+          <a class="card__link" href="#">CZYTAJ WIĘCEJ</a>
         </div>
 
-        <div class="grid-container__box-second box">
-          <img class="box__image" src="assets/img/image-box-2.png" alt="czerwone kwiaty">
-          <h3 class="box__header">LAND LIGHTS LET BE DIVIDED</h3>
-          <p class="box__date">22.09.2019</p>
-          <p class="box__description">Ut enim ad minima veniam, quis nostrum exercitationem ullam et suscipit
+        <div class="card">
+          <img class="card__image" src="assets/img/image-box-2.png" alt="czerwone kwiaty">
+          <h3 class="card__header">LAND LIGHTS LET BE DIVIDED</h3>
+          <p class="card__date">22.09.2019</p>
+          <p class="card__content">Ut enim ad minima veniam, quis nostrum exercitationem ullam et suscipit
             laboriosam,
             nisi ut aliquid ex ea commodi consequatur. Et mollis, est non […]</p>
-          <a class="box__link" href="#">CZYTAJ WIĘCEJ</a>
+          <a class="card__link" href="#">CZYTAJ WIĘCEJ</a>
         </div>
 
-        <div class="grid-container__box-third box">
-          <img class="box__image" src="assets/img/image-box-3.png" alt="drzewa jesienną porą">
-          <h3 class="box__header">LAND LIGHTS LET BE DIVIDED</h3>
-          <p class="box__date">22.09.2019</p>
-          <p class="box__description">Ut enim ad minima veniam, quis nostrum exercitationem ullam et suscipit
+        <div class="card">
+          <img class="card__image" src="assets/img/image-box-3.png" alt="drzewa jesienną porą">
+          <h3 class="card__header">LAND LIGHTS LET BE DIVIDED</h3>
+          <p class="card__date">22.09.2019</p>
+          <p class="card__content">Ut enim ad minima veniam, quis nostrum exercitationem ullam et suscipit
             laboriosam,
             nisi ut aliquid ex ea commodi consequatur. Et mollis, est non […]</p>
-          <a class="box__link" href="#">CZYTAJ WIĘCEJ</a>
+          <a class="card__link" href="#">CZYTAJ WIĘCEJ</a>
         </div>
+
       </div>
 
     </section>
 
 
 
-    <section class="contact-section">
-      <div class="contact-section__text">
-        <h3 class="contact-section__text--header">Jeśli masz jakieś pytania - zapraszamy do kontaktu.</h3>
-        <p class="contact-section__text--description">Odpowiemy najszybciej jak to możliwe.</p>
+    <section class="contact-bar">
+
+      <div class="contact-bar__text">
+        <h3 class="contact-bar__text--header">Jeśli masz jakieś pytania - zapraszamy do kontaktu.</h3>
+        <p class="contact-bar__text--description">Odpowiemy najszybciej jak to możliwe.</p>
       </div>
 
-      <div class="contact-section__button">
-        <a class="contact-section__button--link" href="#">SKONTAKTUJ SIĘ</a>
+      <div class="contact-bar__button">
+        <a class="contact-bar__button--link" href="#">Skontaktuj się</a>
       </div>
+
     </section>
 
-    <section class="fourth">
 
-      <div class="fourth__text">
-        <h3 class="fourth__text--header">Jesień w Rodzinnych Ogrodach Działkowych</h3>
-        <p class="fourth__text--description">Lorem ipsum solor damon que velocis numer ono ratun
+
+    <section class="more-info">
+
+      <div class="more-info__content-wrapper">
+        
+        <h3 class="more-info__content-wrapper--header">Jesień w Rodzinnych Ogrodach Działkowych</h3>
+        <p class="more-info__content-wrapper--description">Lorem ipsum solor damon que velocis numer ono ratun
           damon que velocis numer
         </p>
-        <a class="fourth__text--link" href="#">ZOBACZ WIĘCEJ MATERIAŁÓW</a>
+
+        <div class="more-info__content-wrapper--video-container">
+          <iframe 
+          width="560" height="315" 
+          src="https://www.youtube.com/embed/5Vm1mK5_pnU" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+        </div>
+
+        <a class="more-info__content-wrapper--link" href="#">Zobacz więcej</a>
+
       </div>
 
-      <iframe class="fourth__multimedia" width="731" height="369"
-        src="https://www.youtube.com/embed/FCo7Wn7Gz6M?start=1" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="more-info__video-container">
+
+        <iframe 
+          width="560" height="315" 
+          src="https://www.youtube.com/embed/5Vm1mK5_pnU" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+        
+      </div>
 
     </section>
+
+
 
     <div class="weather-widget">
       <a class="weatherwidget-io" href="https://forecast7.com/pl/51d9420d95/prazmow/" data-label_1="PRAŻMÓW"
@@ -154,56 +198,95 @@
       </script>
     </div>
 
-    <nav class="bottom-nav">
+
+
+    <section class="bottom-nav">
 
       <img class="bottom-nav__image" src="assets/img/logo2.svg" alt="logo stowarzeyszenia ogródkowego nasz krępa">
 
-      <div class="bottom-nav__box-rod box-nav">
+      <div class="bottom-nav__card">
+        <h5 class="bottom-nav__card--title">ROD „KRĘPA-ROSA”</h5>
+        <ul class="bottom-nav__card--list card-list">
 
-        <p class="box-nav__title">ROD „KRĘPA-ROSA”</p>
+          <li class="card-list__item">
+            <a href="#">Galeria</a>
+          </li>
 
-        <ul class="box-nav__list">
-          <li class="box-nav__list--item"><a class="box-nav__list--link" href="#">GALERIA</a></li>
-          <li class="box-nav__list--item"><a class="box-nav__list--link" href="#">NAPISZ DO NAS</a></li>
-          <li class="box-nav__list--item"><a class="box-nav__list--link" href="#">O OGRODZIE</a></li>
-          <li class="box-nav__list--item"><a class="box-nav__list--link" href="#">OPŁATY</a></li>
-        </ul>
-      </div>
+          <li class="card-list__item">
+            <a href="#">Napisz do nas</a>
+          </li>
 
-      <a href=""></a>
+          <li class="card-list__item">
+            <a href="#">O ogrodzie</a>
+          </li>
 
-      <div class="bottom-nav__box-so box-nav">
+          <li class="card-list__item">
+            <a href="#">Opłaty</a>
+          </li>
 
-        <p class="box-nav__title">SO „NASZA KRĘPA”</p>
-
-        <ul class="box-nav__list">
-          <li class="box-nav__list--item"><a class="box-nav__list--link" href="#">DANE STOWARZYSZENIA</a></li>
-          <li class="box-nav__list--item"><a class="box-nav__list--link" href="#">ORGANY STOWARZYSZENIA</a></li>
-          <li class="box-nav__list--item"><a class="box-nav__list--link" href="#">WSPÓŁPRACA</a></li>
-          <li class="box-nav__list--item"><a class="box-nav__list--link" href="#">ZAPYTANIE OFERTOWE</a></li>
-        </ul>
-      </div>
-
-      <div class="bottom-nav__box-pol box-nav">
-
-        <p class="box-nav__title">POLECANE LINKI</p>
-
-        <ul class="box-nav__list">
-          <li class="box-nav__list--item"><a class="box-nav__list--link" href="#">GMINA PRAŻMÓW</a></li>
-          <li class="box-nav__list--item"><a class="box-nav__list--link" href="#">ROZKŁAD JAZDY PKP</a></li>
-          <li class="box-nav__list--item"><a class="box-nav__list--link" href="#">PROGNOZA POGODY DLA PRAŻMOWA</a></li>
-          <li class="box-nav__list--item"><a class="box-nav__list--link" href="#">POLSKI ZWIĄZEK DZIAŁKOWCÓW</a></li>
         </ul>
       </div>
 
 
+      <div class="bottom-nav__card nav-card">
+        <h5 class="bottom-nav__card--title">SO „NASZA KRĘPA”</h5>
+        <ul class="bottom-nav__card--list card-list">
+
+          <li class="card-list__item">
+            <a href="#">Dane stowarzyszenia</a>
+          </li>
+
+          <li class="card-list__item">
+            <a href="#">Organy stowarzyszenia</a>
+          </li>
+
+          <li class="card-list__item">
+            <a href="#">Współpraca</a>
+          </li>
+
+          <li class="card-list__item">
+            <a href="#">Zapytanie ofertowe</a>
+          </li>
+
+        </ul>
+      </div>
+
+
+      <div class="bottom-nav__card nav-card">
+        <h5 class="bottom-nav__card--title">Polecane linki</h5>
+        <ul class="bottom-nav__card--list card-list">
+
+          <li class="card-list__item">
+            <a href="#">Gmina Prażmów</a>
+          </li>
+
+          <li class="card-list__item">
+            <a href="#">Rorkład jazdy PKP</a>
+          </li>
+
+          <li class="card-list__item">
+            <a href="#">Prognoza pogody</a>
+          </li>
+
+          <li class="card-list__item">
+            <a href="#">Polski związek działkowców</a>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+
+      <p class="footer__paragraph"><strong>Copyrights: </strong>Stowarzyszenie Ogrodowe "Nasza Krępa" 2019</p>
+      <p class="footer__paragraph">Coded as a recruitment task by <strong>Kamil Baczyński</strong></p>
+      <p class="footer__paragraph">Made by <strong>NextMove</strong></p>
+    
+    </footer>
 
   </main>
 
-  <footer class="footer">
-    <p class="footer__copyrights"><strong>Copyrights: </strong>Stowarzyszenie Ogrodowe "Nasza Krępa" 2019</p>
-    <p class="footer__made-by">Made by <strong class="footer__made-by--strong">Next</strong><strong class="footer__made-by--orange">Move</strong></p>
-  </footer>
 
   <script src="js/main.js"></script>
 </body>
