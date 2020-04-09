@@ -2,7 +2,7 @@
 .more-info {
   background-color: #ffffff;
   margin: 0;
-  padding: 50px;
+  padding: 80px;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -10,6 +10,7 @@
 
   @media (max-width: $medium) {
     display: block;
+    padding: 50px;
   }
 
   @media (max-width: $small) {
