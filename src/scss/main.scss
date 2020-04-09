@@ -69,8 +69,8 @@ body {
   
       padding: 0;
       margin: 0;
-      width: 40px;
-      height: 40px;
+      width: 35px;
+      height: 35px;
       right: 20px;
       top: 15px;
 
@@ -79,7 +79,7 @@ body {
     // Hamburger icon
     &--icon {
       display: inline-block;
-      width: 40px;
+      width: 35px;
       height: 3px;
       border-radius: 3px;
       background-color: black;
@@ -91,7 +91,7 @@ body {
       &::before {
         content: '';
         display: inline-block;
-        width: 40px;
+        width: 35px;
         height: 3px;
         border-radius: 3px;
         background-color: black;
@@ -102,10 +102,10 @@ body {
       }
 
       &::before {
-        transform: translateY(-16px);
+        transform: translateY(-14px);
       }
       &::after {
-        transform: translateY(16px);
+        transform: translateY(14px);
       }
     }
 
@@ -119,7 +119,6 @@ body {
     .icon-x::after {
       transform: rotate(-90deg);
     }
-    
   }
 
   &__image {
@@ -203,16 +202,34 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 20px;
+  position: relative;
+
+  @media (max-width: $medium) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
   &__image {
     display: block;
     width: 75%;
     height: auto;
+
+    @media (max-width: $medium){
+      position: absolute;
+      width: 200px;
+      height: 200px;
+
+      top: 50%;
+      left: 50%;
+      opacity: 0.15;
+      z-index: 0;
+      transform: translate(-50%, -50%);
+    }
   }
 
   &__card {
     margin: 0;
     padding: 20px 0 0 20px;
+    z-index: 1;
 
     &--title {
       margin: 0;
