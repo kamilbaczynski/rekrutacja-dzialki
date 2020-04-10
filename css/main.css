@@ -521,7 +521,7 @@ template {
 .more-info {
   background-color: #ffffff;
   margin: 0;
-  padding: 50px;
+  padding: 80px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -529,7 +529,8 @@ template {
   grid-column-gap: 50px; }
   @media (max-width: 992px) {
     .more-info {
-      display: block; } }
+      display: block;
+      padding: 50px; } }
   @media (max-width: 768px) {
     .more-info {
       padding: 40px; } }
@@ -831,6 +832,53 @@ body {
     -webkit-transform: translateX(-900px);
         -ms-transform: translateX(-900px);
             transform: translateX(-900px); }
+
+.sticky-buttons {
+  position: fixed;
+  left: 0;
+  top: 40%; }
+  .sticky-buttons__btn {
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-color: #ffffff;
+    border: solid 1px #90b861;
+    border-right: none;
+    cursor: pointer;
+    position: relative; }
+    .sticky-buttons__btn--info {
+      position: absolute;
+      display: block;
+      width: 200px;
+      height: 50px;
+      top: -1px;
+      left: -150px;
+      background-color: #ffffff;
+      border: solid 1px #90b861;
+      border-left: none;
+      padding: 15px 5px;
+      color: black;
+      text-decoration: none;
+      z-index: -5;
+      -webkit-transition: -webkit-transform .2s linear;
+      transition: -webkit-transform .2s linear;
+      -o-transition: transform .2s linear;
+      transition: transform .2s linear;
+      transition: transform .2s linear, -webkit-transform .2s linear; }
+  .sticky-buttons .btn-tel {
+    background-image: url(../assets/img/icon-tel.svg);
+    background-repeat: no-repeat;
+    background-position: center; }
+  .sticky-buttons .btn-email {
+    background-image: url(../assets/img/icon-mail.svg);
+    background-repeat: no-repeat;
+    background-position: center; }
+  .sticky-buttons .slide-in {
+    -webkit-transform: translateX(calc(100% - 1px));
+        -ms-transform: translateX(calc(100% - 1px));
+            transform: translateX(calc(100% - 1px)); }
 
 .bottom-nav {
   background-color: #3a3a3a;
