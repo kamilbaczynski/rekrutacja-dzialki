@@ -242,6 +242,7 @@ body {
   position: fixed;
   left: 0;
   top: 40%;
+  z-index: 1;
 
   &__btn {
     margin: 0;
